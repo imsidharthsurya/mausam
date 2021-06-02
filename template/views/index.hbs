@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/img/weather.png">
+    </head>
+        <body>
+            <div class="main-content">
+                {{>header}}
+                <p>Get the real time weather</p>
+                <form>
+                    <input placeholder="Location">
+                    <button>Search</button>
+                </form>
+                <p id="msg-1"></p>
+                <p id="msg-2"></p>
+                <img class="cond" src="">
+            </div>
+           
+            {{>footer}}
+        <script src="/js/try.js"></script>
+        </body>
+</html>
