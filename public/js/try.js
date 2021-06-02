@@ -1,4 +1,3 @@
-console.log("client site javascript loaded")
 const weatherForm=document.querySelector("form")
 const search=document.querySelector("input")
 const msg1=document.querySelector("#msg-1")
@@ -12,7 +11,7 @@ weatherForm.addEventListener("submit",(e)=>{
     icon.src=""
     e.preventDefault()
     const address=search.value
-    fetch("http://localhost:3000/weather?address="+address).then((response)=>{
+    fetch("/weather?address="+address).then((response)=>{
     response.json().then((data)=>{
         if(data.error)
         {
