@@ -17,6 +17,7 @@ app.set("views",viewDirPath)
 hbs.registerPartials(partialPath)
 
 app.get("",(req,res)=>{
+    console.log('we are before index rendering')
     res.render("index",{
         title:"Weather App",
         creator: "Sidharth Surya"
